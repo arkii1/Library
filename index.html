@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <h1>My book library</h1>
+        </div>
+        <div class="row">
+            <p>A library created for <a href="https://www.theodinproject.com">The Odin Project.</a> CSS skeleton is by <a href="https://www.getskeleton.com">Dave Gamache.</a></p>
+        </div>
+        <div class="row">
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" class="u-full-width" id="name" />
+            </div>
+            <div class="input-container">
+                <label for="author">Author</label>
+                <input type="text" class="u-full-width" id="author" />
+            </div>
+            <div class="input-container">
+                <label for="read">Read Status</label>
+                <select name="Read Status" id="read">
+                    <option value="read">Read</option>
+                    <option value="not read">Not Read</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Add Book" id="add"/>
+        </div>
+        <div class="row">
+            <table id="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
